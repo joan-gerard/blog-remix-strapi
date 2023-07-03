@@ -1,5 +1,5 @@
 {
-  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "app/utils/errorHandling.js", "app/components/Navbar.jsx", "app/components/Layout.jsx", "app/components/index.jsx", "app/components/BlogCard.jsx"],
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "app/utils/errorHandling.js", "app/components/Navbar.tsx", "app/components/Layout.tsx", "app/components/index.jsx", "app/components/BlogCard.jsx"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
     "isolatedModules": true,
