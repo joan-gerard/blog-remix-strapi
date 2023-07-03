@@ -16,17 +16,16 @@ export const links = () => [{ rel: "stylesheet", href: styles }];
 
 export async function loader() {
   checkEnvVars(); // check environmental variables
-  console.log({
-    url: `${process.env.STRAPI_URL_BASE}/api/blogs`,
-    token: process.env.STRAPI_API_TOKEN,
-  });
-  const response = await fetch(`${process.env.STRAPI_URL_BASE}/api/blogs?populate=hero`, {
-    method: "GET",
-    headers: {
-      Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
-      "Content-Type": "application/json",
-    },
-  }); // get the blogs
+  const response = await fetch(
+    `${process.env.STRAPI_URL_BASE}/api/blogs?populate=hero`,
+    {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+    }
+  ); // get the blogs
   checkStatus(response); // check the status
   const data = await response.json(); // get the json response
 

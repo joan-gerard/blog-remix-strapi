@@ -4,7 +4,6 @@ import url from "../utils/url";
 export default function BlogCard({ blog }) {
   let data = blog.attributes;
 
-  console.log('DATA', blog)
   return (
     <div className="card">
       <div className="card-content">
