@@ -46,3 +46,7 @@
 .card-details .card-title {
   text-decoration: none;
 }
+
+.blog-post-hero img {
+  width: 100%;
+}
